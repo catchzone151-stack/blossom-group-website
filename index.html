@@ -1,11 +1,316 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Blossom Group</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Blossom Group</title>
+  <meta name="description" content="The Blossom Group brings together property, education, and sustainability to create integrated, long-term solutions for people, places, and communities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Blossom Group Website Coming Soon</h1>
-  <p>This site is under construction.</p>
-  <p>Test</p>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="nav__logo">
+        <img src="images/logo.png" alt="The Blossom Group" />
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#initiatives">Initiatives</a></li>
+        <li><a href="#mission">Our Mission</a></li>
+        <li><a href="#contact" class="nav__cta">Get in Touch</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero__bg-lines" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="hero__inner container">
+      <p class="hero__eyebrow">The Blossom Group</p>
+      <h1 class="hero__headline">Where Ideas<br>Take Root</h1>
+      <p class="hero__sub">Future-focused. Community-driven.</p>
+      <p class="hero__desc">
+        The Blossom Group brings together property, education, and sustainability
+        to create integrated, long-term solutions for people, places, and communities.
+      </p>
+      <div class="hero__ctas">
+        <a href="#initiatives" class="btn btn--primary">Discover Our Initiatives</a>
+        <a href="#contact" class="btn btn--outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__text-col">
+        <p class="section-label">About Us</p>
+        <h2 class="section-title">A Platform for<br>Purposeful Growth</h2>
+        <p class="about__body">
+          The Blossom Group is an umbrella organisation uniting three distinct but deeply connected
+          initiatives under a single mission: to build the infrastructure that allows communities
+          to genuinely flourish.
+        </p>
+        <p class="about__body">
+          We believe that homes, education, and sustainable living are not separate challenges —
+          they are one interconnected opportunity. We work with partners, collaborators, and community
+          stakeholders to develop long-term, values-led solutions that create lasting impact.
+        </p>
+        <a href="#contact" class="btn btn--primary" style="margin-top: 1.5rem;">Partner With Us</a>
+      </div>
+      <div class="about__visual-col" aria-hidden="true">
+        <div class="about__stat-card">
+          <div class="about__stat-icon">◆</div>
+          <p class="about__stat-label">Three Initiatives</p>
+          <p class="about__stat-text">Property · Education · Village</p>
+        </div>
+        <div class="about__stat-card">
+          <div class="about__stat-icon">◆</div>
+          <p class="about__stat-label">One Mission</p>
+          <p class="about__stat-text">Communities built to thrive</p>
+        </div>
+        <div class="about__stat-card">
+          <div class="about__stat-icon">◆</div>
+          <p class="about__stat-label">UK-Based</p>
+          <p class="about__stat-text">Registered in England & Wales</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INITIATIVES ===================== -->
+  <section class="initiatives" id="initiatives">
+    <div class="container">
+      <div class="initiatives__header">
+        <p class="section-label">What We Do</p>
+        <h2 class="section-title">Our Initiatives</h2>
+        <p class="section-intro">Three pillars. One shared vision.</p>
+      </div>
+      <div class="pillars">
+
+        <!-- Blossom Property -->
+        <div class="pillar pillar--property">
+          <div class="pillar__top-accent"></div>
+          <div class="pillar__logo">
+            <img src="images/logo-property.png" alt="Blossom Property logo" />
+          </div>
+          <h3 class="pillar__name">Blossom Property</h3>
+          <p class="pillar__tag">Places to call home</p>
+          <div class="pillar__rule"></div>
+          <p class="pillar__desc">
+            Thoughtfully developed spaces designed for long-term stability and community value.
+            We approach property not as a transaction, but as the foundation of how people live.
+          </p>
+          <a href="#contact" class="pillar__link">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <!-- Blossom Education -->
+        <div class="pillar pillar--education">
+          <div class="pillar__top-accent"></div>
+          <div class="pillar__logo">
+            <img src="images/logo-education.png" alt="Blossom Education logo" />
+          </div>
+          <h3 class="pillar__name">Blossom Education</h3>
+          <p class="pillar__tag">Foundations for the future</p>
+          <div class="pillar__rule"></div>
+          <p class="pillar__desc">
+            Accessible education and meaningful pathways that unlock potential at every stage.
+            We believe knowledge is the most enduring investment a community can make.
+          </p>
+          <a href="#contact" class="pillar__link">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <!-- Blossom Village -->
+        <div class="pillar pillar--village">
+          <div class="pillar__top-accent"></div>
+          <div class="pillar__logo">
+            <img src="images/logo-village.png" alt="Blossom Village logo" />
+          </div>
+          <h3 class="pillar__name">Blossom Village</h3>
+          <p class="pillar__tag">Living in harmony</p>
+          <div class="pillar__rule"></div>
+          <p class="pillar__desc">
+            Sustainable, people-centred environments where communities can genuinely thrive.
+            Blossom Village is our commitment to building with the future, not just for the present.
+          </p>
+          <a href="#contact" class="pillar__link">
+            Learn More <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MISSION STRIP ===================== -->
+  <section class="mission" id="mission">
+    <div class="container mission__inner">
+      <div class="mission__quote-wrap">
+        <span class="mission__open-quote">&ldquo;</span>
+        <blockquote class="mission__quote">
+          We believe that where you live, how you learn, and how your community grows
+          are not separate problems — they are one connected opportunity.
+        </blockquote>
+        <span class="mission__close-quote">&rdquo;</span>
+      </div>
+      <div class="mission__values">
+        <div class="mission__value">
+          <div class="mission__value-dot"></div>
+          <span>Integrity</span>
+        </div>
+        <div class="mission__value-divider" aria-hidden="true"></div>
+        <div class="mission__value">
+          <div class="mission__value-dot"></div>
+          <span>Community</span>
+        </div>
+        <div class="mission__value-divider" aria-hidden="true"></div>
+        <div class="mission__value">
+          <div class="mission__value-dot"></div>
+          <span>Sustainability</span>
+        </div>
+        <div class="mission__value-divider" aria-hidden="true"></div>
+        <div class="mission__value">
+          <div class="mission__value-dot"></div>
+          <span>Purpose</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__header">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">Work With Us</h2>
+        <p class="section-intro">
+          Whether you are a potential partner, collaborator, investor, or simply want to know more —
+          we would love to hear from you. We aim to respond within 3 working days.
+        </p>
+      </div>
+      <form
+        class="contact__form"
+        action="https://formspree.io/f/maqvowon"
+        method="POST"
+        id="contactForm"
+      >
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What is this regarding?" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell us about your interest or enquiry..." required></textarea>
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="form-note">Your message goes directly to our team. No spam, ever.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="images/logo.png" alt="The Blossom Group" class="footer__logo" />
+        <p class="footer__tagline">Where Ideas Take Root</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#initiatives">Initiatives</a>
+        <a href="#mission">Our Mission</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__bottom">
+        <p>© 2025 The Blossom Group. All rights reserved.</p>
+        <p>Registered in England &amp; Wales</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== JAVASCRIPT ===================== -->
+  <script>
+    // Sticky nav shadow on scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('nav--scrolled', window.scrollY > 60);
+    });
+
+    // Mobile hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('nav__links--open');
+      hamburger.classList.toggle('is-open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close mobile menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('nav__links--open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', false);
+      });
+    });
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const navHeight = nav.offsetHeight;
+          const targetTop = target.getBoundingClientRect().top + window.scrollY - navHeight - 16;
+          window.scrollTo({ top: targetTop, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Simple fade-in on scroll for sections
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.about, .initiatives, .mission, .contact').forEach(el => {
+      el.classList.add('fade-in-section');
+      observer.observe(el);
+    });
+  </script>
+
 </body>
 </html>
