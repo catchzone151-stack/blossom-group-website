@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Blossom Group</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -14,51 +14,59 @@
 <!-- NAV -->
 <nav class="nav">
   <div class="container nav-inner">
-    <div class="logo">Blossom Group</div>
+    <div class="logo">The Blossom Group</div>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#initiatives">Initiatives</a>
-      <a href="#contact" class="btn btn-small">Contact</a>
+      <a href="#contact" class="btn">Contact</a>
     </div>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="container hero-inner">
+
+  <div class="hero-inner container">
+
+    <p class="eyebrow">The Blossom Group</p>
 
     <h1>Building the foundations for thriving communities</h1>
 
-    <p class="hero-sub">
+    <p class="subtext">
       Connecting property, education, and sustainable living into one integrated system.
     </p>
+
+    <div class="hero-cta">
+      <a href="#contact" class="btn primary">Partner With Us</a>
+      <a href="#initiatives" class="btn outline">Explore Initiatives</a>
+    </div>
 
     <!-- CARDS -->
     <div class="hero-cards">
 
-      <div class="card property">
+      <a href="#initiatives" class="card property">
         <div class="overlay"></div>
-        <div class="card-content">
+        <div class="content">
           <h3>Property</h3>
           <p>Spaces to live and grow</p>
         </div>
-      </div>
+      </a>
 
-      <div class="card education">
+      <a href="#initiatives" class="card education">
         <div class="overlay"></div>
-        <div class="card-content">
+        <div class="content">
           <h3>Education</h3>
           <p>Knowledge and opportunity</p>
         </div>
-      </div>
+      </a>
 
-      <div class="card village">
+      <a href="#initiatives" class="card village">
         <div class="overlay"></div>
-        <div class="card-content">
+        <div class="content">
           <h3>Village</h3>
           <p>Sustainable communities</p>
         </div>
-      </div>
+      </a>
 
     </div>
 
@@ -67,18 +75,14 @@
 
 <!-- ABOUT -->
 <section class="about" id="about">
-  <div class="container">
-
+  <div class="container narrow">
     <h2>A platform for long-term development</h2>
-
     <p>
       The Blossom Group brings together property, education, and sustainability to build the physical, educational, and social infrastructure that communities depend on.
     </p>
-
     <p>
       Rather than treating these areas separately, we develop them as one connected system — creating environments where people and communities can grow sustainably.
     </p>
-
   </div>
 </section>
 
@@ -86,7 +90,10 @@
 <section class="initiatives" id="initiatives">
   <div class="container">
 
-    <h2>Our Initiatives</h2>
+    <div class="section-header">
+      <p class="eyebrow">What We Do</p>
+      <h2>Our Initiatives</h2>
+    </div>
 
     <div class="pillars">
 
@@ -112,18 +119,15 @@
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
-  <div class="container">
+  <div class="container narrow">
 
     <h2>Work With Us</h2>
 
     <form action="https://formspree.io/f/maqvowon" method="POST">
-
       <input type="text" name="name" placeholder="Full Name" required />
       <input type="email" name="email" placeholder="Email Address" required />
       <textarea name="message" placeholder="Your message..." required></textarea>
-
-      <button type="submit" class="btn">Send Message</button>
-
+      <button type="submit" class="btn primary">Send Message</button>
     </form>
 
   </div>
