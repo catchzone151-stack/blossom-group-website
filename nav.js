@@ -1,10 +1,11 @@
-// Shared navigation JS — included on every page
 (function () {
   const nav       = document.getElementById('nav');
   const hamburger = document.getElementById('hamburger');
   const navLinks  = document.getElementById('navLinks');
+  const ddWrap    = document.getElementById('initiativesDd');
+  const ddBtn     = document.getElementById('initiativesBtn');
 
-  // Scroll shadow
+  // Scroll shadow on nav
   window.addEventListener('scroll', () => {
     nav.classList.toggle('nav--scrolled', window.scrollY > 60);
   });
@@ -16,11 +17,29 @@
     hamburger.setAttribute('aria-expanded', open);
   });
 
-  // Close on link click
+  // Dropdown toggle (click — for keyboard/mobile)
+  if (ddBtn && ddWrap) {
+    ddBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = ddWrap.classList.toggle('is-open');
+      ddBtn.setAttribute('aria-expanded', open);
+    });
+  }
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (ddWrap && !ddWrap.contains(e.target)) {
+      ddWrap.classList.remove('is-open');
+      if (ddBtn) ddBtn.setAttribute('aria-expanded', false);
+    }
+  });
+
+  // Close everything when any nav link is clicked
   navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
     navLinks.classList.remove('nav__links--open');
     hamburger.classList.remove('is-open');
     hamburger.setAttribute('aria-expanded', false);
+    if (ddWrap) ddWrap.classList.remove('is-open');
   }));
 
   // Smooth scroll for on-page anchors only

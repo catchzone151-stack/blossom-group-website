@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Blossom Group</title>
-  <meta name="description" content="Connecting property, education, sustainable living, and wellbeing into one integrated system for thriving communities." />
+  <meta name="description" content="Connecting property, education, sustainable living, and holistic wellbeing into one integrated system for thriving communities." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -12,18 +12,24 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav__inner container">
       <a href="index.html" class="nav__logo">
-        <img src="images/logo.png" alt="The Blossom Group" />
+        <img src="images/logo.png" alt="The Blossom Group — Home" />
       </a>
       <ul class="nav__links" id="navLinks">
         <li><a href="#about">About</a></li>
-        <li><a href="property.html">Property</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="village.html">Village</a></li>
-        <li><a href="wellbeing.html">Wellbeing</a></li>
+        <li class="nav__dropdown-wrap" id="initiativesDd">
+          <button class="nav__dropdown-toggle" id="initiativesBtn" aria-haspopup="true" aria-expanded="false">
+            Initiatives <span class="nav__caret" aria-hidden="true">▾</span>
+          </button>
+          <ul class="nav__dropdown-menu" role="menu">
+            <li role="none"><a href="property.html" class="nav__dropdown-item nav__dd--property" role="menuitem"><span class="nav__dd-dot"></span>Blossom Property</a></li>
+            <li role="none"><a href="education.html" class="nav__dropdown-item nav__dd--education" role="menuitem"><span class="nav__dd-dot"></span>Blossom Education</a></li>
+            <li role="none"><a href="village.html" class="nav__dropdown-item nav__dd--village" role="menuitem"><span class="nav__dd-dot"></span>Blossom Village</a></li>
+            <li role="none"><a href="wellbeing.html" class="nav__dropdown-item nav__dd--wellbeing" role="menuitem"><span class="nav__dd-dot"></span>Blossom Wellbeing</a></li>
+          </ul>
+        </li>
         <li><a href="#contact" class="nav__cta">Get in Touch</a></li>
       </ul>
       <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -32,26 +38,18 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <section class="hero" id="home">
     <div class="container">
-
       <div class="hero__text fade-section">
         <p class="hero__eyebrow">The Blossom Group</p>
         <h1 class="hero__headline">Building the foundations<br>for thriving communities</h1>
-        <p class="hero__desc">
-          Connecting property, education, sustainable living, and holistic wellbeing
-          into one integrated system.
-        </p>
+        <p class="hero__desc">Connecting property, education, sustainable living, and holistic wellbeing into one integrated system.</p>
         <div class="hero__ctas">
           <a href="#about" class="btn btn--primary">Learn More</a>
           <a href="#contact" class="btn btn--ghost">Get in Touch</a>
         </div>
       </div>
-
-      <!-- 4 Platform Cards -->
       <div class="platform-row fade-section">
-
         <a href="property.html" class="pcard pcard--property">
           <div class="pcard__gradient" aria-hidden="true"></div>
           <div class="pcard__content">
@@ -64,7 +62,6 @@
             <span class="pcard__arrow" aria-hidden="true">&#8594;</span>
           </div>
         </a>
-
         <a href="education.html" class="pcard pcard--education">
           <div class="pcard__gradient" aria-hidden="true"></div>
           <div class="pcard__content">
@@ -77,7 +74,6 @@
             <span class="pcard__arrow" aria-hidden="true">&#8594;</span>
           </div>
         </a>
-
         <a href="village.html" class="pcard pcard--village">
           <div class="pcard__gradient" aria-hidden="true"></div>
           <div class="pcard__content">
@@ -90,7 +86,6 @@
             <span class="pcard__arrow" aria-hidden="true">&#8594;</span>
           </div>
         </a>
-
         <a href="wellbeing.html" class="pcard pcard--wellbeing">
           <div class="pcard__gradient" aria-hidden="true"></div>
           <div class="pcard__content">
@@ -103,66 +98,32 @@
             <span class="pcard__arrow" aria-hidden="true">&#8594;</span>
           </div>
         </a>
-
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section class="about fade-section" id="about">
     <div class="container about__inner">
       <div class="about__text">
         <p class="section-label">About Us</p>
         <h2 class="section-title">A platform for<br>purposeful growth</h2>
-        <p class="about__body">
-          The Blossom Group is an umbrella organisation uniting four distinct but deeply
-          connected initiatives under a single mission: to build the infrastructure that
-          allows communities to genuinely flourish.
-        </p>
-        <p class="about__body">
-          We believe that homes, education, sustainable living, and personal wellbeing are
-          not separate challenges — they are one interconnected opportunity. We work with
-          partners, collaborators, and community stakeholders to develop long-term,
-          values-led solutions that create lasting impact.
-        </p>
+        <p class="about__body">The Blossom Group is an umbrella organisation uniting four distinct but deeply connected initiatives under a single mission: to build the infrastructure that allows communities to genuinely flourish.</p>
+        <p class="about__body">We believe that homes, education, sustainable living, and personal wellbeing are not separate challenges — they are one interconnected opportunity. We work with partners, collaborators, and community stakeholders to develop long-term, values-led solutions that create lasting impact.</p>
         <a href="#contact" class="btn btn--primary" style="margin-top:1.5rem">Partner With Us</a>
       </div>
       <div class="about__cards">
-        <div class="about__card">
-          <div class="about__card-dot"></div>
-          <div>
-            <p class="about__card-title">Four Initiatives</p>
-            <p class="about__card-sub">Property · Education · Village · Wellbeing</p>
-          </div>
-        </div>
-        <div class="about__card">
-          <div class="about__card-dot"></div>
-          <div>
-            <p class="about__card-title">One Mission</p>
-            <p class="about__card-sub">Communities built to thrive</p>
-          </div>
-        </div>
-        <div class="about__card">
-          <div class="about__card-dot"></div>
-          <div>
-            <p class="about__card-title">UK-Based</p>
-            <p class="about__card-sub">Registered in England &amp; Wales</p>
-          </div>
-        </div>
+        <div class="about__card"><div class="about__card-dot"></div><div><p class="about__card-title">Four Initiatives</p><p class="about__card-sub">Property · Education · Village · Wellbeing</p></div></div>
+        <div class="about__card"><div class="about__card-dot"></div><div><p class="about__card-title">One Mission</p><p class="about__card-sub">Communities built to thrive</p></div></div>
+        <div class="about__card"><div class="about__card-dot"></div><div><p class="about__card-title">UK-Based</p><p class="about__card-sub">Registered in England &amp; Wales</p></div></div>
       </div>
     </div>
   </section>
 
-  <!-- MISSION -->
   <section class="mission fade-section" id="mission">
     <div class="container mission__inner">
       <div class="mission__quote-wrap">
         <span class="mission__open-quote" aria-hidden="true">&ldquo;</span>
-        <blockquote class="mission__quote">
-          We believe that where you live, how you learn, how your community grows,
-          and how you care for yourself are not separate problems —
-          they are one connected opportunity.
-        </blockquote>
+        <blockquote class="mission__quote">We believe that where you live, how you learn, how your community grows, and how you care for yourself are not separate problems — they are one connected opportunity.</blockquote>
       </div>
       <div class="mission__values">
         <div class="mission__value"><div class="mission__dot"></div><span>Integrity</span></div>
@@ -176,7 +137,6 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section class="contact fade-section" id="contact">
     <div class="container contact__inner">
       <div class="contact__header">
@@ -186,23 +146,11 @@
       </div>
       <form class="contact__form" action="https://formspree.io/f/maqvowon" method="POST">
         <div class="form-row">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
-          </div>
+          <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="Your full name" required /></div>
+          <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="your@email.com" required /></div>
         </div>
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="What is this regarding?" />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="Tell us about your interest or enquiry..." required></textarea>
-        </div>
+        <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" placeholder="What is this regarding?" /></div>
+        <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="6" placeholder="Tell us about your interest or enquiry..." required></textarea></div>
         <div class="form-footer">
           <button type="submit" class="btn btn--primary">Send Message</button>
           <p class="form-note">Your message goes directly to our team. No spam, ever.</p>
@@ -211,7 +159,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
