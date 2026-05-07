@@ -12,6 +12,7 @@
 </head>
 <body>
 
+  <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav__inner container">
       <a href="index.html" class="nav__logo">
@@ -24,9 +25,9 @@
             Initiatives <span class="nav__caret" aria-hidden="true">▾</span>
           </button>
           <ul class="nav__dropdown-menu" role="menu">
-            <li role="none"><a href="property.html" class="nav__dropdown-item nav__dd--property" role="menuitem"><span class="nav__dd-dot"></span>Blossom Property</a></li>
+            <li role="none"><a href="property.html"  class="nav__dropdown-item nav__dd--property"  role="menuitem"><span class="nav__dd-dot"></span>Blossom Property</a></li>
             <li role="none"><a href="education.html" class="nav__dropdown-item nav__dd--education" role="menuitem"><span class="nav__dd-dot"></span>Blossom Education</a></li>
-            <li role="none"><a href="village.html" class="nav__dropdown-item nav__dd--village" role="menuitem"><span class="nav__dd-dot"></span>Blossom Village</a></li>
+            <li role="none"><a href="village.html"   class="nav__dropdown-item nav__dd--village"   role="menuitem"><span class="nav__dd-dot"></span>Blossom Village</a></li>
             <li role="none"><a href="wellbeing.html" class="nav__dropdown-item nav__dd--wellbeing" role="menuitem"><span class="nav__dd-dot"></span>Blossom Wellbeing</a></li>
           </ul>
         </li>
@@ -38,70 +39,101 @@
     </div>
   </nav>
 
+  <!-- HERO -->
   <section class="hero" id="home">
     <div class="container">
+
+      <!-- Text stack with parent logo prominent above -->
       <div class="hero__text fade-section">
+        <img src="images/logo.png" alt="The Blossom Group" class="hero__logo" />
         <p class="hero__eyebrow">The Blossom Group</p>
         <h1 class="hero__headline">Building the foundations<br>for thriving communities</h1>
-        <p class="hero__desc">Connecting property, education, sustainable living, and holistic wellbeing into one integrated system.</p>
+        <p class="hero__desc">
+          Connecting property, education, sustainable living, and holistic wellbeing
+          into one integrated system.
+        </p>
         <div class="hero__ctas">
           <a href="#about" class="btn btn--primary">Learn More</a>
           <a href="#contact" class="btn btn--ghost">Get in Touch</a>
         </div>
       </div>
+
+      <!-- Platform cards — large centred logo, name, description -->
       <div class="platform-row fade-section">
+
         <a href="property.html" class="pcard pcard--property">
           <div class="pcard__gradient" aria-hidden="true"></div>
+          <div class="pcard__top-bar"></div>
           <div class="pcard__content">
-            <img src="images/logo-property.png" alt="" class="pcard__logo" />
-            <div class="pcard__text">
+            <div class="pcard__logo-wrap">
+              <img src="images/logo-property.png" alt="Blossom Property" class="pcard__logo" />
+            </div>
+            <div class="pcard__body">
               <h3 class="pcard__name">Blossom Property</h3>
               <p class="pcard__sub">Places to call home</p>
-              <p class="pcard__desc">Property sourcing, refurbishment, lettings, serviced accommodation, and more.</p>
+              <div class="pcard__rule"></div>
+              <p class="pcard__desc">Property sourcing, refurbishment, lettings, serviced accommodation, and interior design.</p>
             </div>
-            <span class="pcard__arrow" aria-hidden="true">&#8594;</span>
+            <span class="pcard__arrow" aria-hidden="true">Explore &#8594;</span>
           </div>
         </a>
+
         <a href="education.html" class="pcard pcard--education">
           <div class="pcard__gradient" aria-hidden="true"></div>
+          <div class="pcard__top-bar"></div>
           <div class="pcard__content">
-            <img src="images/logo-education.png" alt="" class="pcard__logo" />
-            <div class="pcard__text">
+            <div class="pcard__logo-wrap">
+              <img src="images/logo-education.png" alt="Blossom Education" class="pcard__logo" />
+            </div>
+            <div class="pcard__body">
               <h3 class="pcard__name">Blossom Education</h3>
               <p class="pcard__sub">Foundations for the future</p>
+              <div class="pcard__rule"></div>
               <p class="pcard__desc">Short courses in permaculture, nutrition, home education, and sustainable living.</p>
             </div>
-            <span class="pcard__arrow" aria-hidden="true">&#8594;</span>
+            <span class="pcard__arrow" aria-hidden="true">Explore &#8594;</span>
           </div>
         </a>
+
         <a href="village.html" class="pcard pcard--village">
           <div class="pcard__gradient" aria-hidden="true"></div>
+          <div class="pcard__top-bar"></div>
           <div class="pcard__content">
-            <img src="images/logo-village.png" alt="" class="pcard__logo" />
-            <div class="pcard__text">
+            <div class="pcard__logo-wrap">
+              <img src="images/logo-village.png" alt="Blossom Village" class="pcard__logo" />
+            </div>
+            <div class="pcard__body">
               <h3 class="pcard__name">Blossom Village</h3>
               <p class="pcard__sub">A vision taking shape</p>
+              <div class="pcard__rule"></div>
               <p class="pcard__desc">The UK's first Muslim eco-permaculture village — an off-grid community in the making.</p>
             </div>
-            <span class="pcard__arrow" aria-hidden="true">&#8594;</span>
+            <span class="pcard__arrow" aria-hidden="true">Explore &#8594;</span>
           </div>
         </a>
+
         <a href="wellbeing.html" class="pcard pcard--wellbeing">
           <div class="pcard__gradient" aria-hidden="true"></div>
+          <div class="pcard__top-bar"></div>
           <div class="pcard__content">
-            <img src="images/logo-wellbeing.png" alt="" class="pcard__logo" />
-            <div class="pcard__text">
+            <div class="pcard__logo-wrap">
+              <img src="images/logo-wellbeing.png" alt="Blossom Wellbeing" class="pcard__logo" />
+            </div>
+            <div class="pcard__body">
               <h3 class="pcard__name">Blossom Wellbeing</h3>
               <p class="pcard__sub">Nurturing body &amp; spirit</p>
+              <div class="pcard__rule"></div>
               <p class="pcard__desc">Complementary therapies, retreats, and holistic health services for the whole person.</p>
             </div>
-            <span class="pcard__arrow" aria-hidden="true">&#8594;</span>
+            <span class="pcard__arrow" aria-hidden="true">Explore &#8594;</span>
           </div>
         </a>
+
       </div>
     </div>
   </section>
 
+  <!-- ABOUT -->
   <section class="about fade-section" id="about">
     <div class="container about__inner">
       <div class="about__text">
@@ -119,6 +151,7 @@
     </div>
   </section>
 
+  <!-- MISSION -->
   <section class="mission fade-section" id="mission">
     <div class="container mission__inner">
       <div class="mission__quote-wrap">
@@ -137,6 +170,7 @@
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section class="contact fade-section" id="contact">
     <div class="container contact__inner">
       <div class="contact__header">
@@ -159,6 +193,7 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
